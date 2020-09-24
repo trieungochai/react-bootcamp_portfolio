@@ -1,5 +1,6 @@
 import React from 'react';
 import Projects from './Projects';
+import SocialProfiles from './SocialProfiles';
 
 class App extends React.Component {
     state = {
@@ -32,6 +33,8 @@ class App extends React.Component {
                 }
                 <hr />
                 <Projects />
+                <hr />
+                <SocialProfiles/>
             </div>
         );
     };
