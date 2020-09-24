@@ -1,6 +1,7 @@
 import React from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
+import profile from './assets/Spike.png';
 
 class App extends React.Component {
     state = {
@@ -14,6 +15,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
+                <img src={profile} alt='profile' className='profile'/>
                 <h1>Hello!</h1>
                 <p>I'm trieungochai - a software engineer.</p>
                 <p>I'm always looking forward to working on meaningful projects.</p>
