@@ -8,7 +8,7 @@ class App extends React.Component {
     state = {
         displayBio: false,
     }
-
+    
     toggleDisplayBio = () => {
         this.setState({displayBio: !this.state.displayBio});
     };
@@ -23,7 +23,7 @@ class App extends React.Component {
                 <p>有意義なプロジェクトに取り組むことを心から楽しみにしています。</p>
                 {this.state.displayBio
                     ? (
-                        <div>
+                       <div>
                             <p>HCMに住んでいて、毎日コーディングしています。</p>
                             <p>好きなプログラミング言語はJSで、ReactJSは素晴らしいと思います。</p>
                             <p>こちらこそよろしくお願いします。</p>
@@ -41,7 +41,7 @@ class App extends React.Component {
                 <hr />
                 <SocialProfiles/>
             </div>
-        );
+        );  
     };
 };
 
