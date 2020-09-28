@@ -1,7 +1,7 @@
 import React from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
-import profile from './assets/Spike.png';
+import profile from '../assets/Spike.png';
 import Title from './Title';
 
 class App extends React.Component {
