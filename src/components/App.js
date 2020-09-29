@@ -3,7 +3,6 @@ import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import profile from '../assets/Spike.png';
 import Title from './Title';
-import Jokes from './Jokes';
 
 class App extends React.Component {
     state = {
@@ -41,8 +40,6 @@ class App extends React.Component {
                 <Projects />
                 <hr />
                 <SocialProfiles/>
-                <hr />
-                <Jokes />
             </div>
         );  
     };
