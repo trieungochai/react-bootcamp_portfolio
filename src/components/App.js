@@ -3,7 +3,6 @@ import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import profile from '../assets/Spike.png';
 import Title from './Title';
-import Header from './Header';
 
 class App extends React.Component {
     state = {
@@ -17,7 +16,6 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Header />
                 <img src={profile} alt='profile' className='profile'/>
                 <h1>もしもし！</h1>
                 <p>trieungochaiと申します。</p>

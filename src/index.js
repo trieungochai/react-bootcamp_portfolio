@@ -5,12 +5,14 @@ import { createBrowserHistory } from 'history';
 import App from './components/App';
 import Jokes from './components/Jokes';
 import './index.css';
+import Header from './components/Header';
 
 ReactDOM.render(
     <Router history={createBrowserHistory()}>
         <Switch>
-            <Route exact path='/' component={App}/>
-            <Route path='/jokes' component={Jokes}/>
+            {/* So now, <App/> becomes a child of the <Header/> component */}
+            <Route exact path='/' render={() => <Header><App /></Header>} />
+            <Route path='/jokes' render={() => <Header><Jokes /></Header>} />
         </Switch>
     </Router>,
     document.getElementById('root')
